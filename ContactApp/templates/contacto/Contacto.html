@@ -1,0 +1,21 @@
+{% extends "WebApp/Base.html" %}
+{% load static %}
+{% block content %}  
+
+<div class="contenedorFormulario">
+    {% if "valido" in request.GET %}
+        <p style="color: white;">Formulario enviado correctamente</p>
+    {% endif %}
+    {% if "invalido" in request.GET %}
+        <p style="color: white;">Formulario no enviado, se produjo un error</p>
+    {% endif %}
+    <form action="" method="POST">
+        {% csrf_token %}
+        <table style="color: white; margin: 20px auto;">
+            {{ contact_form.as_table }}
+        </table>
+        <input type="submit" value="Enviar" class="btn btn-success">
+    </form>
+</div>
+
+{% endblock %}
