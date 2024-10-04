@@ -143,8 +143,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'tu_mail'
-EMAIL_HOST_PASSWORD = 'tu_password'
+EMAIL_HOST_USER = 'mmsaant@gmail.com'
+EMAIL_HOST_PASSWORD = 'fakejaja2'
 
 # Configuración de Crispy Forms
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
